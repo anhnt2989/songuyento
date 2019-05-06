@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyento</title>
+</head>
+<body>
+        <script>
+            let numb = 20;
+            let count = 0;
+            let n=2;
+            let kqx = '';
+            while (count < numb) {
+                for (i=2;i<n;i++) {
+                    let x = n % i;
+                    if (x == 0) {
+                        break;
+                    } else {
+                        continue;
+                    }
+                }
+                if (i == n) {
+                    kqx += n + ' ';
+                    count++;
+                }
+                n++;
+            }
+            document.write(numb + " Số nguyên tố đầu tiên là : " +  kqx);
+        </script>
+</body>
+</html>
